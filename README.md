@@ -5,8 +5,8 @@ Compatible with [GRBL](https://github.com/grbl/grbl)
 ## Usage:
 
 1. Run your dxf design through dxf2gcode, using just one pass for z <= 0
-2. Run `python mill2plasma.py <file_name>.ngc -c <cut_height> -p <pierce_height> -d <pierce_delay>`, change items between <> with needed values for your material, <pierce_height> should be between 150% and 200% times <cut_height>
-  * A new file named <file_name>_plasma.ngc will be created
+2. Run `python mill2plasma.py <file_name>.ngc -c <cut_height> -p <pierce_height> -d <pierce_delay>`, change items between <> with needed values for your material, `<pierce_height>` should be between 150% and 200% times `<cut_height>`
+  * A new file named `<file_name>_plasma.ngc` will be created
 3. Prepare your CNC by referencing Z0 close above workpiece
 4. Run modified G-code, before each cut:
   * Torch will be referenced
