@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"USAGE: pycamOpti.py <file>"
+"USAGE: mill2plasma.py [-c | --cut_height=] [-p | --pierce_height=] [-d | --pierce_delay=] <file>"
 
 import sys,getopt
 
@@ -137,7 +137,7 @@ if __name__=='__main__':
                 if coord_count > 0:
                     G_dest = G_modal
 
-            if M_dest == 6 or M_dest == 8 or M_dest == 5:
+            if M_dest == 8 or M_dest == 5:
                 line = ''
                 M_dest = -1
 
